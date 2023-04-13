@@ -86,11 +86,18 @@ int main()
         cout << "Added element: " << arr[i] << endl;
     }
 
+    cout << "While loop:" << endl;
     Iterator<int> it(&arr, arr.GetSize());
     while (it != it.GetSize())
     {
         cout << "Iteration at index: " << *it << endl;
         ++it;
+    }
+
+    cout << "For loop:" << endl;
+    for (Iterator<int> it(&arr, arr.GetSize()); it != it.GetSize(); ++it)
+    {
+        cout << "Iteration at index: " << *it << endl;
     }
 
     return 0;
