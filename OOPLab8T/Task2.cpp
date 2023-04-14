@@ -47,7 +47,7 @@ void sort(char **arr, int size)
 
 int main()
 {
-    int arr1[] = {1, 2, 32, 41, 55, 6321};
+    int arr1[] = {1, 2, 32, -31, 55, 6321};
     cout << "Sorted arr1:" << endl;
     sort(arr1, 6);
     for (auto el : arr1)
